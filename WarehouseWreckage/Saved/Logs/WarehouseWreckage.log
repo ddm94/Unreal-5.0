@@ -1477,3 +1477,30 @@ LogConfig: CVar [[QualityLevelMapping:high]] deferred - dummy variable created
 [2022.08.15-17.43.45:324][884]AssetCheck: New page: Asset Save: Main
 [2022.08.15-17.43.45:324][884]LogContentValidation: Display: Validating World /Game/Main.Main
 [2022.08.15-17.46.33:352][855]LogDerivedDataCache: C:/Users/Varcx/AppData/Local/UnrealEngine/Common/DerivedDataCache: Maintenance finished in +00:00:00.180 and deleted 0 file(s) with total size 0 MiB.
+[2022.08.15-17.48.12:831][591]LogWorld: UWorld::CleanupWorld for World_6, bSessionEnded=true, bCleanupResources=true
+[2022.08.15-17.48.12:831][591]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.08.15-17.51.45:523][984]BlueprintLog: New page: Collapse to Function
+[2022.08.15-17.51.58:535][503]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Main" FILE="../../../../../../Varcx/Unreal Projects/Unreal 5.0/WarehouseWreckage/Content/Main.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2022.08.15-17.51.58:595][503]LogUObjectHash: Compacting FUObjectHashTables data took   3.16ms
+[2022.08.15-17.51.58:866][503]LogSavePackage: Moving output files for package: /Game/Main
+[2022.08.15-17.51.58:866][503]LogSavePackage: Moving '../../../../../../Varcx/Unreal Projects/Unreal 5.0/WarehouseWreckage/Saved/Main5BC81742466EEA78FD5B7C9D4587944F.tmp' to '../../../../../../Varcx/Unreal Projects/Unreal 5.0/WarehouseWreckage/Content/Main.umap'
+[2022.08.15-17.51.58:882][503]LogFileHelpers: No new changes to save!
+[2022.08.15-17.51.58:882][503]LogFileHelpers: Saving map 'Main' took 0.348
+[2022.08.15-17.51.58:901][503]AssetCheck: New page: Asset Save: Main
+[2022.08.15-17.51.58:901][503]LogContentValidation: Display: Validating World /Game/Main.Main
+[2022.08.15-17.52.09:537][756]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Main" FILE="../../../../../../Varcx/Unreal Projects/Unreal 5.0/WarehouseWreckage/Content/Main.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2022.08.15-17.52.09:586][756]LogUObjectHash: Compacting FUObjectHashTables data took   1.72ms
+[2022.08.15-17.52.09:632][756]LogSavePackage: Moving output files for package: /Game/Main
+[2022.08.15-17.52.09:633][756]LogSavePackage: Moving '../../../../../../Varcx/Unreal Projects/Unreal 5.0/WarehouseWreckage/Saved/Main16B7F69A4018B844BF2A3882B38E1600.tmp' to '../../../../../../Varcx/Unreal Projects/Unreal 5.0/WarehouseWreckage/Content/Main.umap'
+[2022.08.15-17.52.09:645][756]LogFileHelpers: No new changes to save!
+[2022.08.15-17.52.09:645][756]LogFileHelpers: Saving map 'Main' took 0.108
+[2022.08.15-17.52.09:664][756]AssetCheck: New page: Asset Save: Main
+[2022.08.15-17.52.09:664][756]LogContentValidation: Display: Validating World /Game/Main.Main
+[2022.08.15-17.52.50:053][943]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Main" FILE="../../../../../../Varcx/Unreal Projects/Unreal 5.0/WarehouseWreckage/Content/Main.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2022.08.15-17.52.50:101][943]LogUObjectHash: Compacting FUObjectHashTables data took   0.85ms
+[2022.08.15-17.52.50:400][943]LogSavePackage: Moving output files for package: /Game/Main
+[2022.08.15-17.52.50:400][943]LogSavePackage: Moving '../../../../../../Varcx/Unreal Projects/Unreal 5.0/WarehouseWreckage/Saved/Main69A356694D9F34DE972C12A33144B9AA.tmp' to '../../../../../../Varcx/Unreal Projects/Unreal 5.0/WarehouseWreckage/Content/Main.umap'
+[2022.08.15-17.52.50:416][943]LogFileHelpers: No new changes to save!
+[2022.08.15-17.52.50:416][943]LogFileHelpers: Saving map 'Main' took 0.364
+[2022.08.15-17.52.50:437][943]AssetCheck: New page: Asset Save: Main
+[2022.08.15-17.52.50:437][943]LogContentValidation: Display: Validating World /Game/Main.Main
