@@ -12,3 +12,17 @@ Topics Covered:
 - Programming basics: variables, strings, references, functions and branches...
 - Unreal basics: maps, actors, components, transforms, vectors...
 - Objec Oriented basics: obects/structs, classes, member functions, self...
+
+# Obstacle Assault
+
+An obstacle course mini-game the player needs to navigate across. This, much like the Warehouse Wreckage mini-game, is but a prototype and it is a game built for learning purposes.
+
+Topics Covered:
+
+- The structure of C++ syntax
+- How to create classes in C++
+- Member variables and functions
+- Blueprint child classes of C++
+- UPROPERTY and UE_LOG
+- FString, FVector, FRotator
+- GameMode and Caracter classes
