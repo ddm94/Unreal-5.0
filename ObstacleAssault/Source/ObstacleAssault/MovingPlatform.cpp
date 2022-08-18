@@ -24,23 +24,61 @@ void AMovingPlatform::Tick(float DeltaTime)
 {
 	
 	Super::Tick(DeltaTime);
+	
+	MovePlatform(DeltaTime);
+	RotatePlatform(DeltaTime);
+}
 
-	// Move platform forwards
-		// Get current location (local variable)
-	FVector CurrentLocation = GetActorLocation();
-		// Add vector to that location
-	CurrentLocation += PlatformVelocity * DeltaTime;
-		// Set the location
-	SetActorLocation(CurrentLocation);
+void AMovingPlatform::MovePlatform(float DeltaTime)
+{
 	// Send platform back if gone too far
 		// Check how far we've moved
-	float DistanceMoved = FVector::Distance(StartLocation, CurrentLocation);
 		// Reverse direction of motion if gone too far
-	if (DistanceMoved > MoveDistance)
+	if (ShouldPlatformReturn())
 	{
-		PlatformVelocity = -PlatformVelocity;
+		// Debugging 
+		/*
+		float DistanceMoved = FVector::Distance(StartLocation, GetActorLocation());
+		float OverShot = DistanceMoved - MoveDistance;
+		FString Name = GetName();
+		UE_LOG(LogTemp, Display, TEXT("%s overshot by: %f"), *Name, OverShot);
+		*/
 
-		StartLocation = CurrentLocation;
+		FVector MoveDirection = PlatformVelocity.GetSafeNormal();
+
+		// We want to move exactly to the end and no farther
+		StartLocation += MoveDirection * MoveDistance;
+
+		// Move to the end location otherwise the platform will have overshot and gone past that end location
+		SetActorLocation(StartLocation);
+
+		PlatformVelocity = -PlatformVelocity;
+	}
+	else
+	{
+		// Move platform forwards
+			// Get current location (local variable)
+		FVector CurrentLocation = GetActorLocation();
+			// Add vector to that location
+		CurrentLocation += PlatformVelocity * DeltaTime;
+			// Set the location
+		SetActorLocation(CurrentLocation);
 	}
 }
 
+void AMovingPlatform::RotatePlatform(float DeltaTime)
+{
+	//UE_LOG(LogTemp, Display, TEXT("%s Rotating..."), *GetName());
+
+	AddActorLocalRotation(RotationVelocity * DeltaTime);
+}
+
+bool AMovingPlatform::ShouldPlatformReturn() const
+{
+	return GetDistanceMoved() > MoveDistance;
+}
+
+float AMovingPlatform::GetDistanceMoved() const
+{
+	return FVector::Distance(StartLocation, GetActorLocation());
+}
