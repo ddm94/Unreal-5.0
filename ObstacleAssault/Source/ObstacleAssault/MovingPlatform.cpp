@@ -17,61 +17,46 @@ void AMovingPlatform::BeginPlay()
 	Super::BeginPlay();
 
 	StartLocation = GetActorLocation();
+
+	FString Name = GetName();
+
+	UE_LOG(LogTemp, Display, TEXT("BeginPlay: %s"), *Name);
 }
 
 // Called every frame
 void AMovingPlatform::Tick(float DeltaTime)
 {
-	
 	Super::Tick(DeltaTime);
-	
+
 	MovePlatform(DeltaTime);
 	RotatePlatform(DeltaTime);
 }
 
+
 void AMovingPlatform::MovePlatform(float DeltaTime)
 {
-	// Send platform back if gone too far
-		// Check how far we've moved
-		// Reverse direction of motion if gone too far
 	if (ShouldPlatformReturn())
 	{
-		// Debugging 
-		/*
-		float DistanceMoved = FVector::Distance(StartLocation, GetActorLocation());
-		float OverShot = DistanceMoved - MoveDistance;
-		FString Name = GetName();
-		UE_LOG(LogTemp, Display, TEXT("%s overshot by: %f"), *Name, OverShot);
-		*/
-
 		FVector MoveDirection = PlatformVelocity.GetSafeNormal();
-
-		// We want to move exactly to the end and no farther
-		StartLocation += MoveDirection * MoveDistance;
-
-		// Move to the end location otherwise the platform will have overshot and gone past that end location
+		StartLocation = StartLocation + MoveDirection * MoveDistance;
 		SetActorLocation(StartLocation);
-
 		PlatformVelocity = -PlatformVelocity;
 	}
 	else
 	{
-		// Move platform forwards
-			// Get current location (local variable)
 		FVector CurrentLocation = GetActorLocation();
-			// Add vector to that location
-		CurrentLocation += PlatformVelocity * DeltaTime;
-			// Set the location
+		CurrentLocation = CurrentLocation + (PlatformVelocity * DeltaTime);
 		SetActorLocation(CurrentLocation);
 	}
 }
 
 void AMovingPlatform::RotatePlatform(float DeltaTime)
 {
-	//UE_LOG(LogTemp, Display, TEXT("%s Rotating..."), *GetName());
-
-	AddActorLocalRotation(RotationVelocity * DeltaTime);
+	FRotator CurrentRotation = GetActorRotation();
+	CurrentRotation = CurrentRotation + RotationVelocity * DeltaTime;
+	SetActorRotation(CurrentRotation);
 }
+
 
 bool AMovingPlatform::ShouldPlatformReturn() const
 {
@@ -80,5 +65,5 @@ bool AMovingPlatform::ShouldPlatformReturn() const
 
 float AMovingPlatform::GetDistanceMoved() const
 {
-	return FVector::Distance(StartLocation, GetActorLocation());
+	return FVector::Dist(StartLocation, GetActorLocation());
 }

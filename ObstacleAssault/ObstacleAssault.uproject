@@ -15,11 +15,28 @@
 	],
 	"Plugins": [
 		{
-			"Name": "Bridge",
-			"Enabled": true,
+			"Name": "MegascansPlugin",
+			"Enabled": false,
 			"SupportedTargetPlatforms": [
 				"Win64",
 				"Mac",
+				"Linux"
+			]
+		},
+		{
+			"Name": "EditorScriptingUtilities",
+			"Enabled": true
+		},
+		{
+			"Name": "ModelingToolsEditorMode",
+			"Enabled": true
+		},
+		{
+			"Name": "SteamVR",
+			"Enabled": false,
+			"SupportedTargetPlatforms": [
+				"Win32",
+				"Win64",
 				"Linux"
 			]
 		}

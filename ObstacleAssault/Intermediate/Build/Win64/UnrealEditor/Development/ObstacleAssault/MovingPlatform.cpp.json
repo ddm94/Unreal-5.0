@@ -1,13 +1,13 @@
 {
     "Version": "1.2",
     "Data": {
-        "Source": "d:\\varcx\\unreal projects\\unreal 5.0\\obstacleassault\\source\\obstacleassault\\movingplatform.cpp",
+        "Source": "d:\\varcx\\unreal projects\\unreal-5.0\\obstacleassault\\source\\obstacleassault\\movingplatform.cpp",
         "ProvidedModule": "",
-        "PCH": "d:\\varcx\\unreal projects\\unreal 5.0\\obstacleassault\\intermediate\\build\\win64\\obstacleassaulteditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "PCH": "d:\\varcx\\unreal projects\\unreal-5.0\\obstacleassault\\intermediate\\build\\win64\\obstacleassaulteditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
         "Includes": [
-            "d:\\varcx\\unreal projects\\unreal 5.0\\obstacleassault\\intermediate\\build\\win64\\unrealeditor\\development\\obstacleassault\\definitions.obstacleassault.h",
-            "d:\\varcx\\unreal projects\\unreal 5.0\\obstacleassault\\source\\obstacleassault\\movingplatform.h",
-            "d:\\varcx\\unreal projects\\unreal 5.0\\obstacleassault\\intermediate\\build\\win64\\unrealeditor\\inc\\obstacleassault\\movingplatform.generated.h"
+            "d:\\varcx\\unreal projects\\unreal-5.0\\obstacleassault\\intermediate\\build\\win64\\unrealeditor\\development\\obstacleassault\\definitions.obstacleassault.h",
+            "d:\\varcx\\unreal projects\\unreal-5.0\\obstacleassault\\source\\obstacleassault\\movingplatform.h",
+            "d:\\varcx\\unreal projects\\unreal-5.0\\obstacleassault\\intermediate\\build\\win64\\unrealeditor\\inc\\obstacleassault\\movingplatform.generated.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []
