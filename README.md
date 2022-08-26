@@ -57,12 +57,12 @@ Topics Covered:
 
 ## Toon Tanks v2
 
-Coming Soon
+A really simple game jam style game where the player controls a tank that can move throughout the world and launch projectiles. The objective is to destroy all the enemy turrets (which implement some basic AI where they can aim and launch projectiles at the player) present in the level without dying. Therefore, unlike the previous mini-games, this game features a winning/losing condition with HUD displays.
 
 ---
 
 ## Simple Shooter v2
 
-Coming Soon
+Coming Soon...
 
 ---
