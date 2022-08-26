@@ -1,6 +1,6 @@
 # Unreal 5.0
 
-This repository is a collection of micro-games made with UE5 and  of the Unreal 5.0 C++ Developer: Learn C++ and Make Video Games course which can be found on GameDev.tv.
+This repository is a collection of micro-games made with UE5 which is part of the Unreal 5.0 C++ Developer: Learn C++ and Make Video Games course which can be found on GameDev.tv.
 These games are but simple prototypes; they are not finished games. They were made for educaitonal purposes as a way of exploring the new features in Unreal 5 while also learning C++.
 
 ---
@@ -52,5 +52,17 @@ Topics Covered:
 - Line Tracing and Collisions
 - While, For Lopps and Arrays
 - Calling C++ function from Blueprint
+
+---
+
+## Toon Tanks v2
+
+Coming Soon
+
+---
+
+## Simple Shooter v2
+
+Coming Soon
 
 ---
