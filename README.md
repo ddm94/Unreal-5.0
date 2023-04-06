@@ -50,7 +50,7 @@ Topics Covered:
 - Lighting with Lumen
 - Modular level design
 - Line Tracing and Collisions
-- While, For Lopps and Arrays
+- While, For Loops and Arrays
 - Calling C++ function from Blueprint
 
 ---
